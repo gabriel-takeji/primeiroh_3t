@@ -1,8 +1,10 @@
-//alert("Oi, eu sou um alert")
-//console.log("Oi, eu estou no console")
-//document.write("Aula de Pens. Comp.")
+//alert("");
+//console.log("");
+//document.write("");
 
-function meChame( ){
-    alert("Oi, eu sou um alert");
-    
+let tabuada = 2
+let nome = "Gabriel Takeji"
+function meChame(){
+    document.write ("<h1>Tabuada</h1>")
+
 }
