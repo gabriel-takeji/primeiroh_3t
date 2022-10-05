@@ -4,7 +4,7 @@
 
 var tabuada = 8;
 
-function tabuada(nome){
+function meChame(nome){
     document.write("<h1>Tabuada do " + tabuada + "</h1>");
     document.write(tabuada + " x 1 = "+(tabuada*1)+"<br>");
     document.write(tabuada + " x 2 = "+(tabuada*2)+"<br>");
@@ -21,15 +21,23 @@ function tabuada(nome){
 }
 
 function escreva(){
-   for(var i = 1; i < 11; i++){
-
-      document.write(tabuada + " x " + i + " = "+(tabuada*i)+"<br>");
-
-   }
+    for(var i = 1; i < 11; i++){
+        document.write(tabuada + " x " + i + " = "+(tabuada*i)+"<br>");
+    }
 }
 
 function quadrado(){
-      for(var i = 2; i < 21; i++)
-      document.write("O quadrado de " + i + " é " + (i*i)+ "<br>")
+    for(var i = 2; i < 101; i++){
+        document.write("O Quadrado de " + i + " é " + (i*i)+ "<br>")
+    }
 }
-
+function total(){
+    let valor = document.getElementById("valor").value;
+    let juros = document.getElementById("juros").value;
+    let meses = document.getElementById("meses").value;
+    let resultado = 0;
+    for(let i = 1; i <= meses; i++){
+         resultado = valor * (1+(juros/100));
+    }
+    document.write("O Resultado é " + resultado);
+}
