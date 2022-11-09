@@ -42,3 +42,12 @@
     color: white;
     cursor: pointer  ;
 }
+.calcF {
+    display: none;
+}
+#calcFin {
+    display: none;
+}
+#calcFin:checked + .calculadora .calcF {
+    display: block;
+}
